@@ -1,14 +1,14 @@
 {
   "extends": [
-    null,
-    "tslint-etc",
+    "tslint:recommended",
     "tslint-config-prettier",
-    "tslint-plugin-prettier"
+    "tslint-plugin-prettier",
+    "tslint-etc"
   ],
   "rules": {
     "no-unused-declaration": true,
     "max-line-length": [
-      false,
+      true,
       90
     ],
     "quotemark": [

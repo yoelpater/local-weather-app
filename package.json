@@ -89,4 +89,5 @@
     "imagePort": "3000",
     "internalContainerPort": "3000"
   }
+
 }
