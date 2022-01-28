@@ -17,7 +17,6 @@
   "files.autoSave": "onFocusChange",
   "git.confirmSync": false,
   "git.enableSmartCommit": true,
-  "npm.enableScriptExplorer": true,
   "typescript.tsdk": "node_modules/typescript/lib",
   "workbench.iconTheme": "material-icon-theme", // Requires
   "auto-close-tag.SublimeText3Mode": true, // Requires Auto
