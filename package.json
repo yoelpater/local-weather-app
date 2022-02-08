@@ -6,6 +6,7 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "build:prod": "ng build --prod",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "lint": "run-p lint:ts lint:tsc",
@@ -30,7 +31,9 @@
     "docker:taillogs": "echo Web Server Logs: && cross-conf-env docker logs -f $npm_package_config_imageName",
     "docker:open": "sleep 2 && cross-conf-env open-cli http://localhost:$npm_package_config_imagePort",
     "docker:debugmessage": "echo Docker Debug Completed Successfully! Hit Ctrl+C to terminate log tailing.",
-    "docker:debug": "run-s -cs docker:build docker:run docker:open docker:debugmessage docker:taillogs"
+    "docker:debug": "run-s -cs docker:build docker:run docker:open docker:debugmessage docker:taillogs",
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run"
   },
   "private": true,
   "dependencies": {
@@ -50,8 +53,11 @@
     "@angular-devkit/build-angular": "~13.2.0",
     "@angular/cli": "~13.2.0",
     "@angular/compiler-cli": "~13.2.0",
+    "@cypress/schematic": "^1.6.0",
     "@types/jasmine": "~3.10.0",
+    "@types/jasminewd2": "^2.0.10",
     "@types/node": "^12.11.1",
+    "angular-unit-test-helper": "^12.0.0",
     "cross-conf-env": "^1.2.1",
     "dev-norms": "^1.7.1",
     "import-sort": "^6.0.0",
@@ -60,6 +66,7 @@
     "import-sort-style-module": "^6.0.0",
     "init-dev-env": "^1.0.0",
     "jasmine-core": "~4.0.0",
+    "jasmine-spec-reporter": "^7.0.0",
     "js-beautify": "^1.14.0",
     "karma": "~6.3.0",
     "karma-chrome-launcher": "~3.1.0",
@@ -70,11 +77,13 @@
     "open-cli": "^7.0.1",
     "prettier": "^2.5.1",
     "rimraf": "^3.0.2",
+    "ts-node": "^10.5.0",
     "tslint": "^6.1.3",
     "tslint-config-prettier": "^1.18.0",
     "tslint-etc": "^1.13.10",
     "tslint-plugin-prettier": "^2.3.0",
-    "typescript": "~4.5.2"
+    "typescript": "~4.5.2",
+    "cypress": "latest"
   },
   "importSort": {
     ".ts, .tsx": {
@@ -89,5 +98,4 @@
     "imagePort": "3000",
     "internalContainerPort": "3000"
   }
-
 }
