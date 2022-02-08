@@ -9,6 +9,8 @@
     "build:prod": "ng build --prod",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
+    "test:debug": "npm test -- --source-map",
+    "test:coverage": "npm test -- --code-coverage",
     "lint": "run-p lint:ts lint:tsc",
     "e2e": "ng e2e",
     "style": "import-sort -l \"**/{src,tests,e2e}/**/*.ts\" && prettier --check \"**/{src,tests,e2e}/**/*.{*css,ts}\"",
