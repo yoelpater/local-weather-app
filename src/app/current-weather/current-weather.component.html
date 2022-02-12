@@ -2,17 +2,17 @@
   no data
 </div>
 <div *ngIf="current">
-  <div fxLayout="row" >
+  <div fxLayout="row">
     <div class="mat-title no-margin" fxFlex="66%">
       {{current?.city}}, {{current?.country}}
     </div>
     <div class="mat-h3 no-margin" fxFlex>
-  {{current.date | date:'EEEE'}}<br>
-  {{current.date | date:'MMM d'}}{{getOrdinal(current.date)}}
+      {{current.date | date:'EEEE'}}<br>
+      {{current.date | date:'MMM d'}}{{getOrdinal(current.date)}}
     </div>
   </div>
   <div fxLayout="row">
-    <div fxFlex="55%" >
+    <div fxFlex="55%">
       <img style="zoom: 175%" [src]='current?.image'>
     </div>
     <div class="right no-margin" fxFlex>
