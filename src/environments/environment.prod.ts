@@ -1,7 +1,7 @@
 export const environment = {
   production: true,
   appId: '38dcff8f4ba8b49d1fc04cc5566720ee',
-  baseUrl: 'http://',
+  baseUrl: 'https://',
   username: 'yoelpater',
-  geonamesApi: 'api',
+  geonamesApi: 'secure',
 }
