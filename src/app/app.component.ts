@@ -15,7 +15,7 @@ import { Component } from '@angular/core'
       <div fxLayoutAlign="center">
         <app-city-search></app-city-search>
       </div>
-      <div fxLayout="row">
+      <div fxLayout="row" style="margin-top: 64px">
         <div fxFlex></div>
         <div fxFlex="300px">
           <mat-card>
