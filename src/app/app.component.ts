@@ -12,7 +12,10 @@ import { Component } from '@angular/core'
           Your city, your forecast, right now!
         </div>
       </div>
-      <div fxLayout="row">
+      <div fxLayoutAlign="center">
+        <app-city-search></app-city-search>
+      </div>
+      <div fxLayout="row" style="margin-top: 64px">
         <div fxFlex></div>
         <div fxFlex="300px">
           <mat-card>
